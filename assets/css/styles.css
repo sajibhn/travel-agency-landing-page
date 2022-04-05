@@ -90,7 +90,6 @@ body {
     font-size: var(--fs-body);
     color: var(--clr-para);
     line-height: 1.6;
-    overflow: hidden;
 }
 
 
@@ -104,6 +103,27 @@ body {
 .container {
     max-width: 1300px;
     width: calc(100% - .5rem);
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    gap: 2.75rem;
+}
+
+.section {
+    margin-top: 60px;
+}
+
+.section__title {
+    text-align: center;
+    font-size: var(--fs-section-title);
+    color: var(--clr-title);
+}
+
+.section__description {
+    text-align: center;
+    max-width: 950px;
     margin: 0 auto;
 }
 
@@ -167,8 +187,9 @@ body {
     background-image: url('../img/herobg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 80vh;
     color: var(--clr-white);
+    position: relative;
 }
 
 .hero__container {
@@ -182,6 +203,7 @@ body {
     display: flex;
     gap: 10px;
     align-items: center;
+    cursor: pointer;
 }
 
 .hero__play i {
@@ -216,4 +238,38 @@ body {
 .hero__subtitle {
     font-size: var(--fs-sub-title);
     margin: var(--m-4) 0;
+}
+
+/* =============== service =============== */
+
+.services__container {
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.services__data {
+    padding: 40px;
+    width: 280px;
+
+}
+
+.services__data:nth-child(2) {
+    box-shadow: 0 5px 59px 0 rgb(0 0 0 / 8%);
+    ;
+}
+
+.services__data i {
+    color: #fbad27;
+    font-size: 36px;
+    margin-bottom: var(--m-1);
+}
+
+.services__data h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--clr-title);
+    margin-bottom: var(--m-1);
 }
