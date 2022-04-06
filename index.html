@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Document</title>
 </head>
@@ -147,7 +148,6 @@
         <section class="section blogs" id="blog">
             <h2 class="section__title">Latest News From Blog</h2>
             <p class="section__description">See Whats People Are Sharing Their Thoughts </p>
-
             <div class="blogs__container grid container">
                 <div class="blog__data blog__1">
                     <img src="assets/img/sydney.jpg" alt="">
@@ -191,11 +191,69 @@
                         </p>
                     </div>
                 </div>
-
-
+            </div>
+            <div class="blog__readmore">
+                <a href="#" class="btn">read more</a>
             </div>
         </section>
+
+        <!-- =============== Testimonial ===============-->
+        <section class="testimonial section" id="testimonial">
+            <h2 class="section__title">What Our Client Says </h2>
+            <p class="section__description">People’s sharing their thought about our works </p>
+
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__data swiper-slide">
+                        <img src="assets/img/user.jpg" alt="">
+                        <div class="testimonial__body">
+                            <p>Integrate 360 campaign viral disrupt pair programming latte paradigm hacker 360 campaign
+                                cortado bootstrapping. Thinker-maker-doer paradigm affordances viral bootstrapping ship
+                                it
+                                human-centered design waterfall is so 2000 and late responsive integrate parallax.</p>
+
+                            <h4>Dmitri Vegas</h4>
+                            <span>London, England</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__data swiper-slide">
+                        <img src="assets/img/user.jpg" alt="">
+                        <div class="testimonial__body">
+                            <p>Integrate 360 campaign viral disrupt pair programming latte paradigm hacker 360 campaign
+                                cortado bootstrapping. Thinker-maker-doer paradigm affordances viral bootstrapping ship
+                                it
+                                human-centered design waterfall is so 2000 and late responsive integrate parallax.</p>
+
+                            <h4>Dmitri Vegas</h4>
+                            <span>London, England</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__data swiper-slide">
+                        <img src="assets/img/user.jpg" alt="">
+                        <div class="testimonial__body">
+                            <p>Integrate 360 campaign viral disrupt pair programming latte paradigm hacker 360 campaign
+                                cortado bootstrapping. Thinker-maker-doer paradigm affordances viral bootstrapping ship
+                                it
+                                human-centered design waterfall is so 2000 and late responsive integrate parallax.</p>
+
+                            <h4>Dmitri Vegas</h4>
+                            <span>London, England</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
     </main>
+
+
+    <!-- =============== Script ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
