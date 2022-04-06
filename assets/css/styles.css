@@ -84,6 +84,11 @@ img {
     display: inline-block;
 }
 
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--clr-white);
     font-family: var(--body-font);
@@ -155,15 +160,15 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     z-index: var(--z-fixed);
 }
 
 .nav {
-    padding: var(--p-6) 0;
+    padding: var(--p-4) 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #7B5C7C;
 }
 
 .nav__list {
@@ -175,6 +180,11 @@ body {
     text-transform: capitalize;
     color: var(--clr-white);
     font-weight: 300;
+    transition: all .3s ease-in-out;
+}
+
+.nav__link:hover {
+    color: var(--clr-yellow);
 }
 
 .nav__contact {
@@ -189,10 +199,31 @@ body {
     font-size: 1.25rem;
 }
 
+/* =============== scroll menu =============== */
+.active__nav {
+    background-color: rgba(74, 71, 98, .8);
+    transition: all .3s ease-in-out;
+}
+
+.active__nav nav {
+    border: 0;
+}
+
+.active__nav nav .nav__link,
+.active__nav nav .nav__contact {
+    color: var(--clr-white);
+
+}
+
+.active__nav nav .nav__link:hover {
+    color: var(--clr-yellow);
+}
 
 /* =============== Hero =============== */
 .hero {
-    background-image: url('../img/herobg.jpg');
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), url('../img/new-york-1745089_1280.jpg')); */
+    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),
+        url("../img/new-york-1745089_1280.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -424,6 +455,10 @@ body {
 
 .swiper-pagination-bullet-active {
     background: var(--clr-yellow);
+}
+
+.testimonial__container {
+    margin-top: var(--m-6);
 }
 
 .testimonial__data {
