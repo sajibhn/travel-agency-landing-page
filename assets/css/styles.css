@@ -334,8 +334,8 @@ body {
 
 }
 
-.services__data:nth-child(2) {
-    box-shadow: 0 5px 59px 0 rgb(0 0 0 / 8%);
+.services__data {
+    box-shadow: 0 5px 40px 0 rgb(0 0 0 / 8%);
 }
 
 .services__data i {
